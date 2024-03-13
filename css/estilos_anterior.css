@@ -1,0 +1,307 @@
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.header{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.789);
+    display: flex;
+    color: white;
+    align-items: center;
+    .padreLogo{
+        width: 28%;
+        margin-left: 30px;
+        .logo{
+            width: 100px;
+        }
+    }
+    .navegacion{
+        width: 68%;
+        .listaNav{
+            list-style: none;
+            display: flex;
+            .listaItem{
+                text-decoration: none;
+                margin-right: 20px;
+                text-align: center;
+            }   
+            .linkNav{
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px;
+                color: white; 
+                font-size: 1.2rem;
+                &:hover{
+                    box-shadow: 0px 4px 8px rgba(249,249,249,0.1);
+                border-radius: 5px;
+                }
+            } 
+        }
+    }
+}
+.mainIndex{
+    grid-area: main;
+    .tituloPrincipal{
+        padding-left: 100px;
+        padding-top: 100px;
+        color: white;
+        line-height: 1.5;
+        background-image: url(../assets/img/comic-5345814_640.jpg);
+        background-size: cover;
+        background-position: right;
+        background-attachment: fixed;
+        width: 1349px;
+        height: 100vh;
+    .titulo{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    .grosor{
+        font-weight: 100;
+    } 
+    }
+    .linkContanctanos{
+        box-sizing: content-box;
+        display: inline-block;
+        color:white;
+        background-color: rgba(255, 255, 255, 0);
+        width: 130px;
+        text-decoration: none;
+        border: 1px solid white;
+        padding: 10px 10px;
+        margin-top: 30px;
+    }
+    }
+    .seccionTarjetas{
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        .tituloSeccionTarjetas{
+            text-align: center;
+            font-size: 2rem;
+            padding-top: 20px;
+        }
+        .contenedorTarjetas{
+            display: flex;
+            justify-content: space-evenly;
+            column-gap: 20px;
+            .tarjeta{
+                width: 150px;
+                height: 250px;
+               background-color: rgb(215, 215, 215);
+                padding: 20px 20px;
+
+            .imgTarjeta{
+                width: 100px;
+                height: 200px;
+                object-fit: contain;
+                object-fit: cover;
+    
+            }
+            }
+        }
+    }
+            .aprendeYconoce{
+                width: 90%;
+                margin: 30px auto;
+                justify-content: center;
+                display: flex;
+                gap: 50px;
+                .tarjeta{
+                    width: 650px;
+                    height: 400px;
+                    padding: 20PX;
+                    background-color: gray;
+                    color:black;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    row-gap: 10px;
+                }
+                .aprende{
+                    background-image: url(../assets/img/venom-7059662_640.png);
+                }
+                .conoce{
+                    background-image: url(../assets/img/marvel.jpg);
+                }
+                .linkVer{
+                    box-sizing: content-box;
+                    display: inline-block;
+                    color:white;
+                    background-color: rgb(0, 0, 0);
+                    width: 35px;
+                    text-decoration: none;
+                    border: 1px solid black;
+                    padding: 10px 10px;
+                    margin-top: 10px;
+                }
+                }
+
+}
+.footer{
+padding: 50px;
+grid-area: footer;
+background-color: rgb(48, 46, 46);
+
+.copy{
+    width: 50px;
+    margin-top:30px ;
+    
+    p{
+        justify-content: space-between;
+        font-size: 0.9rem;
+        color: white;
+    }
+}
+.contenedorFooter{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+a{
+    color: gray;
+    text-decoration:none;
+    &:hover{
+        color: white;
+    }
+}
+h2,h3,h4{
+    margin-bottom: 10px;
+    color: beige;
+}
+ul{
+    list-style: none;
+    li{
+        margin-bottom: 10px;
+    }
+}
+form{
+    display: flex;
+    input[type="email"]{
+        padding: 0 15px;
+        max-width: 100%;
+        height: 42px;
+        border: 2px solid rgba(129,129,129,.2);
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
+        vertical-align: middle;
+        font-size: 0.8rem;
+    }
+    input[type="email"]::placeholder{
+        color: white;
+    }
+    input[type="email"]:focus::placeholder{
+        font-size: 1.1rem;
+    }
+        input[type="submit"]{
+        padding: 12px 12px;
+        font-size: 0.8rem;
+        line-height: 18px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-width: 0;
+        border: 2px solid rgba(129,129,129,.2);
+        vertical-align: middle;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 600;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+}
+ .logoFooter{
+    width: 100px;
+ }
+ .fa-instagram{
+    font-size: 2rem;
+    padding: 10px;
+ }
+ .fa-tiktok{
+     font-size: 2rem;
+     padding: 10px;
+ }
+ .fa-whatsapp{
+     font-size: 2rem;
+     position: fixed;
+     bottom: 10px;
+     right: 10px;
+ }
+}
+}
+
+@media screen and (max-width:768px){
+    .grilla{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header"
+                             "aside"
+                             "main"   
+                             "footer";
+    }
+    .header{
+        width: 100%;
+        flex-direction: column;
+        .padreLogo{
+            width: initial;
+            margin-left: initial;
+        }
+        .logo{
+            width: 100px;
+        }
+        .navegacion{
+            width: initial;
+            .listaNav{
+                .listaItem{
+                    margin-right: 20px;
+                }   
+                .linkNav{
+                    font-size: 1rem;
+                } 
+            }
+        }
+    }
+.mainIndex{
+    .tituloPrincipal{
+        padding-top: 20px;
+        padding-left: 10px;
+        height: 50vh;
+    }
+    .seccionTarjetas{
+        .tituloSeccionTarjetas{
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        .contenedorTarjetas{
+            flex-wrap: wrap;
+            justify-content: center;
+            .tarjeta{
+                width: 150px;
+                height: 250px;
+            }
+        }
+    }
+}
+}
+
+@media screen and (max-width:768px){
+    .footer{
+        padding: 10px;
+        .contenedorFooter{
+          flex-wrap: wrap;
+          justify-content: center;
+          gap:20px;
+        }
+    }
+}
